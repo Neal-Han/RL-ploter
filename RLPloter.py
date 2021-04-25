@@ -45,7 +45,7 @@ class RlPloter():
         self.__markerstyleArr = []
         self.__colorArr = []
 
-    def showFigure(self, show = True, save = False, fileName= "figure"):
+    def showFigure(self, show=True,save=False,fileName="figure"):
         df=[]
         fig = plt.figure()
         for i,line in enumerate(self.__linesArr):
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     P.addData(data2,'test2')
     P.setXScale(2) 
     P.setYScale(2)   
-    P.showFigure(show = True,save = False, fileName = 'figure')
+    P.showFigure(show=True,save=False,fileName='figure')
 
 ## markerstyle
 
