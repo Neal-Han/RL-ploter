@@ -78,9 +78,9 @@ class RlPloter():
 if __name__ == '__main__':
 
 
-    a = RlPloter()
-    a.setTitle('Example')
-    a.setLabel('x-axis','y-axis')
+    P = RlPloter()
+    P.setTitle('Example')
+    P.setLabel('x-axis','y-axis')
 
     data1 = [[23, 19, 20, 19, 11, 15, 14],             
              [19, 24, 19, 21, 20, 15, 12],             
@@ -93,11 +93,11 @@ if __name__ == '__main__':
              [19, 21, 21, 19, 19, 14, 2]]   
 
 
-    a.addData(data1,'test1')
-    a.addData(data2,'test2')
-    a.setXScale(2) 
-    a.setYScale(2)   
-    a.showFigure(show = True,save = False, fileName = 'figure')
+    P.addData(data1,'test1')
+    P.addData(data2,'test2')
+    P.setXScale(2) 
+    P.setYScale(2)   
+    P.showFigure(show = True,save = False, fileName = 'figure')
 
 ## markerstyle
 
