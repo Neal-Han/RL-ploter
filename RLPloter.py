@@ -1,13 +1,11 @@
-import time
 import numpy as np
 import pandas as pd
 import seaborn as sns
-import matplotlib as mpl
 from copy import deepcopy
 import matplotlib.pyplot as plt
 sns.set()
 
-# Ploter for Reinforcement learning result
+
 class RlPloter():
     def __init__(self):
         self.reset()
@@ -47,7 +45,7 @@ class RlPloter():
         self.__markerstyleArr = []
         self.__colorArr = []
 
-    def showFigure(self, show = True, save = False):
+    def showFigure(self, show = True, save = False, fileName= "figure"):
         df=[]
         fig = plt.figure()
         for i,line in enumerate(self.__linesArr):
@@ -91,14 +89,15 @@ if __name__ == '__main__':
 
     data2 = [[22, 23, 22, 20, 19, 17, 4],            
              [18, 20, 22, 20, 20, 19, 9],            
-             [19, 20, 20, 19, 19, 15, 4]]   
+             [19, 20, 20, 19, 19, 15, 4],
+             [19, 21, 21, 19, 19, 14, 2]]   
 
 
     a.addData(data1,'test1')
     a.addData(data2,'test2')
     a.setXScale(2) 
     a.setYScale(2)   
-    a.showFigure('figure')
+    a.showFigure(show = True,save = False, fileName = 'figure')
 
 ## markerstyle
 
